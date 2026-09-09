@@ -85,6 +85,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.text.withLink
 import androidx.compose.ui.text.withStyle
@@ -2044,13 +2045,20 @@ private fun Paragraph(
                 )
             }
         }
+        val predominantlyRtl = remember(annotatedString.text) {
+            hasPredominantlyRtlLetters(annotatedString.text)
+        }
+        val displayText = remember(annotatedString, predominantlyRtl) {
+            if (predominantlyRtl) annotatedString.isolateLtrRunsForRtlParagraph() else annotatedString
+        }
         Text(
-            text = annotatedString,
+            text = displayText,
             modifier = Modifier,
             inlineContent = inlineContents,
             softWrap = true,
             overflow = TextOverflow.Visible,
             style = LocalTextStyle.current.copy(
+                textDirection = if (predominantlyRtl) TextDirection.Rtl else textStyle.textDirection,
                 lineHeight = if (hasInlineMath) TextUnit.Unspecified else LocalTextStyle.current.lineHeight
             )
         )

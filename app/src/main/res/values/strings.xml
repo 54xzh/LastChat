@@ -1140,6 +1140,7 @@
     <string name="storage_sandbox_clear_incomplete">Cleanup incomplete. Close conversations using this workspace and retry.</string>
     <string name="storage_files_open_failed">Failed to open file: %1$s</string>
     <string name="setting_page_color_mode">Color Mode</string>
+    <string name="setting_page_color_mode_desc">Switch between light, dark, or system theme</string>
     <string name="setting_page_color_mode_dark">Dark</string>
     <string name="setting_page_color_mode_light">Light</string>
     <string name="setting_page_color_mode_system">System</string>

@@ -1587,6 +1587,7 @@
   <string name="setting_page_chat_storage">聊天记录存储</string>
   <string name="setting_page_chat_storage_desc">%1$d 个文件，%2$.2f MB</string>
   <string name="setting_page_color_mode">颜色模式</string>
+  <string name="setting_page_color_mode_desc">选择浅色、深色或跟随系统外观</string>
   <string name="setting_page_color_mode_dark">深色</string>
   <string name="setting_page_color_mode_light">浅色</string>
   <string name="setting_page_color_mode_system">跟随系统</string>

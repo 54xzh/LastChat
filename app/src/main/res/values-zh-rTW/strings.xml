@@ -848,6 +848,7 @@
   <string name="storage_sandbox_clear_incomplete">清理未完成，請關閉使用該工作區的對話後重試。</string>
   <string name="storage_files_open_failed">開啟檔案失敗：%1$s</string>
   <string name="setting_page_color_mode">顏色模式</string>
+  <string name="setting_page_color_mode_desc">選擇淺色、深色或跟隨系統外觀</string>
   <string name="setting_page_color_mode_dark">深色</string>
   <string name="setting_page_color_mode_light">淺色</string>
   <string name="setting_page_color_mode_system">跟隨系統</string>
